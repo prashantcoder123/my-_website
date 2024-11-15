@@ -1,0 +1,25 @@
+.downloadBtn{
+    padding: 0.5rem;
+    width: 15vw;
+    margin-top: 0.7rem;
+    background-color: #690cc9;
+    cursor: pointer;
+    border: 2px solid #690cc9;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    @media (max-width: 536px) {
+        width: 55%;
+    }
+    @media (max-width: 390px) {
+        width: 65%;
+    }
+    @media (max-width: 360px) {
+        font-size: 0.8rem;
+    }
+}
+.downloadBtn:hover{
+    background-color: transparent;
+    color: #690cc9;
+}

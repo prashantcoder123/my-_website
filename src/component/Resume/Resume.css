@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
+
+}
+body{
+  scroll-behavior: smooth;
+  
+}
+
+.resume{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    margin-top: 6rem;
+    /* margin-bottom: 2rem; */
+}
+.resume .resumedata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 68%;
+    @media (max-width: 1240px) {
+        width: 72%;
+    }
+    @media (max-width: 1100px) {
+        width: 80%;
+    }
+    @media (max-width: 984px) {
+        width: 90%;
+    }
+}
+hr{
+    height: 0.3rem;
+    width: 60%;
+    margin-top: 0.4rem;
+    border-radius: 50px;
+    background-color: #555;
+}
+
+
+.resume .resumedata .resumeheading{
+    font-size: 2.5rem;
+    color: #555;
+    cursor: pointer;
+    
+}
+.resume .resumedata .resumeheading:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+.selectbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 210px;
+    border: 1px solid #111;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50px;
+}
+.selectbox .selectedu{
+    position: relative;
+    /* background-color: aqua; */
+    margin-right: 0.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight:200;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.selectbox .selectexp{
+    position: relative;
+    /* background-color: aqua; */
+    
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight:200;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.anim{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.educ {
+    /* height: 200px;
+    width: 200px; */
+    /* position: relative; */
+    height: 600px;
+    width: 100%;
+    /* background-color: #f2f2f2; */
+    overflow: hidden;
+    /* transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out; */
+    /* margin-right: 4rem; */
+    @media (max-width: 950px) {
+        height: 1000px;
+    }
+  }
+  
+  .educ.open {
+    /* display: flex; */
+    width: 100%;
+    
+    transform: scaleX(1);
+    opacity: 1;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  }
+  
+  .educ.closed {
+      
+      transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+      transform: scaleX(0);
+      opacity: 0;
+      width: 0;
+    /* display: none; */
+    
+  }
+  .selectedu.eduopen{
+    background-color: #d1cfcf;
+  }
+  .selectedu.educlose{
+    background-color: transparent;
+  }
+  .selectexp.eduopen{
+    background-color: #d1cfcf;
+  }
+  .selectexp.educlose{
+    background-color: transparent;
+  }
+
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.education .educ{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education .educ .educdata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 3rem; */
+    
+}
+.education .educ .educdata .educheading{
+    font-size: 2.3rem;
+    color: #555;
+    cursor: pointer;
+}
+.education .educ .educdata .educdisplay{
+    display: flex;
+    flex-direction: column;
+    
+}
+.education .educ .educdata .educcontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 90%; */
+    margin-top: 4rem;
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+}
+.education .educ .media{
+    @media (max-width: 950px) {
+        margin-top: -8rem;
+    }
+    @media (max-width: 671px) {
+        margin-top: -2rem;
+    }
+    @media (max-width: 528px) {
+        margin-top: 0rem;
+    }
+    @media (max-width: 511px) {
+        margin-top: -2rem;
+    }
+    @media (max-width: 437px) {
+        margin-top: 1rem;
+    }
+    @media (max-width: 420px) {
+        margin-top: 2rem;
+    }
+    @media (max-width: 401px) {
+        margin-top: 4rem;
+    }
+    @media (max-width: 368px) {
+        margin-top: 9rem;
+    }
+}
+.schooling{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    width: 40%;
+    @media (max-width: 950px) {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+.education .educ .educdata .educcontent .college{
+    width: 40%;
+    @media (max-width: 950px) {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+}
+.education .educ .educdata .educcontent h1{
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.education .educ .educdata .educcontent .year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.4rem;
+    background-color: #e4edf9;
+    width: 7.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.education .educ .educdata .educcontent .college .year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.4rem;
+    background-color: #e4edf9;
+    width: 10rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.education .educ .educdata .educcontent .year h3{
+    color: #222;
+}
+.education .educ .educdata .educcontent .name{
+    font-size: 1.4rem;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.education .educ .educdata .educcontent .school{
+    font-size: 1.4rem;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.education .educ .educdata .educcontent p{
+    font-size: 1rem;
+    color: #555;
+    line-height: 20pt;
+    cursor: pointer;
+}
+.education .educ .educdata .educcontent ul{
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    
+}
+.education .educ .educdata .educcontent ul li{
+    color: #555;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    @media (max-width: 360px) {
+        font-size: 0.8rem;
+    }
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+
+}
+.skill .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.3rem 0.1rem;
+}
+.skill .data h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+}
+.skill .bar{
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+}
+.skill .bar .progressbar{
+    /* width: 80%; */
+    height: 0.5rem;
+    border-radius: 6px;
+    background-color: #690cc9;
+    z-index: 1;
+}
+.skill .bar .react{
+    /* background-color: #76ba1b; */
+    width: 90%;
+}
+.skill .bar .node{
+    background-color: orangered;
+    width: 85%;
+}
+.skill .bar .js{
+    background-color: #76ba1b;
+    width: 80%;
+}
+.skill .bar .mongo{
+    background-color: #ff3aae;
+    width: 85%;
+}
+.skill .bar .express{
+    background-color: brown;
+    width: 90%;
+}
