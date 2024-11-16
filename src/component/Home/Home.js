@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css';
 import me from '../../images/me.webp';
 import node from "../../images/node.svg";
+import express from "../../images/express.svg";
+// import mongo from "../../images/mongo.svg";
 import html from '../../images/html.svg';
 import css from '../../images/css.svg';
 import react from '../../images/react.svg';
@@ -52,6 +54,8 @@ const Home = () => {
 
                             <div title='React'><img src={react} alt='react'></img></div>
                             <div title='Node JS'><img src={node} alt='node'></img></div>
+                            <div title='Express JS'><img src={express} alt='express'></img></div>
+                            {/* <div title='Mongo DB'><img src={mongo} alt='mongo db'></img></div> */}
                             </div>
                         </div>
                     </div>
